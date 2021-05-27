@@ -17,13 +17,13 @@ Set up variations
 For Variation A
 1. Change headline from "Open an account in about 10 minutes" to "Open an account in about 5 minutes"
 2. Change the font weight of the headline to bold
-3. Use the visual editor to add click tracking on the 'select brokerage' radio button.
 
 <img width="1641" alt="Screen Shot 2021-05-27 at 10 52 59 AM" src="https://user-images.githubusercontent.com/15365569/119848391-c78cb480-bed9-11eb-9452-f427b7647007.png">
 
 Then, add metrics to your experiment:
-1. Primary metric should be clicks on the 'select brokerage' button
-2. Secondary metric should be overall revenue per visitor
+1. Add click tracking on the 'select brokerage' radio button.
+2. Primary metric should be clicks on the 'select brokerage' button
+3. Secondary metric should be overall revenue per visitor
 
 Finally, set traffic allocation & schedule:
 1. Update traffic allocation to only include 25% of site visitors
@@ -31,3 +31,4 @@ Finally, set traffic allocation & schedule:
 
 ### Notes
 - For this exercise you can use Optimizely's visual editor or the code editor. If you use the code editor, you'll need to use polling for any JavaScript changes. Refer to the documentation here: https://docs.developers.optimizely.com/web/docs/utilities for how to use Optimizely's waitForElement function.
+- Optimizely recommends adding click tracking by saving the URL as a Page within Optimizely, then going to the implementation tab on the left, clicking "events" in the top nav, and creating the click event from that screen. For the purposes of this exercise, you can create the click event using this method OR within the visual editor for variation A of your experiment.
